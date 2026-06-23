@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ghulam Fareed | Professional Portfolio</title>
+  <title>Ghulam Fareed | Software Engineer Portfolio</title>
 
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="cursor-glow"></div>
   <div class="glow-bg"></div>
 
   <header class="site-header">
@@ -37,19 +36,23 @@
   <main>
     <!-- Hero Section -->
     <section class="hero container">
-      <div class="hero-content">
-        <div class="profile-container reveal">
-          <div class="profile-status">Available for Work</div>
-          <div class="profile-image-ring">
-            <img src="profilepic.png" alt="Ghulam Fareed" class="profile-img">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="profile-badge reveal">
+            <span class="status-dot"></span> Available for Hire
+          </div>
+          <h1 class="reveal">Building <span class="gradient-text">Scalable</span> Solutions</h1>
+          <p class="hero-tagline reveal">Ghulam Fareed — Software Developer & IoT Specialist</p>
+          <p class="hero-desc reveal">BSCS Graduate from COMSATS. I bridge the gap between software and hardware with expertise in Full-Stack development and Embedded Systems.</p>
+          <div class="hero-btns reveal">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
           </div>
         </div>
-        <h1 class="reveal">Engineering <span class="gradient-text">Digital Experiences</span></h1>
-        <p class="hero-tagline reveal">Ghulam Fareed — Software Developer & IoT Enthusiast</p>
-        <p class="hero-desc reveal">BSCS Graduate from COMSATS University. Specializing in Full-Stack Development, AI Recommendations, and Embedded Systems.</p>
-        <div class="hero-btns reveal">
-          <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        <div class="hero-image reveal">
+          <div class="image-wrapper">
+            <img src="profilepic.png" alt="Ghulam Fareed">
+          </div>
         </div>
       </div>
     </section>
@@ -57,23 +60,27 @@
     <!-- About Section -->
     <section id="about" class="container section-padding">
       <div class="reveal">
-        <h2 class="section-title">Professional Summary</h2>
+        <h2 class="section-title">About Me</h2>
         <div class="card about-card">
           <div class="about-grid">
             <div class="about-text">
-              <p>I am a passionate <strong>Computer Science Graduate</strong> with a knack for building scalable applications. From developing complex <strong>Android ecosystems</strong> like Grocify to implementing <strong>Face Recognition</strong> on microcontrollers, I enjoy the challenge of working across the full stack.</p>
-              <p>My approach combines technical rigor with a focus on user-centric design, ensuring every project I build is not only functional but also intuitive.</p>
+              <p>I am a <strong>Computer Science Graduate</strong> with a passion for building robust digital products. My journey includes developing complex Android ecosystems and implementing real-time security systems using microcontrollers.</p>
+              <p>I focus on clean code, performance, and user experience. Whether it's a mobile app or an IoT device, I ensure the final product is both powerful and intuitive.</p>
               <div class="stats-grid">
-                <div class="stat-item"><strong>BSCS</strong><span>Comsats Sahiwal</span></div>
-                <div class="stat-item"><strong>Location</strong><span>Okara, Pakistan</span></div>
+                <div class="stat-item">
+                  <span class="stat-label">Education</span>
+                  <span class="stat-value">BSCS (COMSATS)</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-label">Location</span>
+                  <span class="stat-value">Okara, Pakistan</span>
+                </div>
               </div>
             </div>
-            <div class="about-details">
-              <div class="info-card">
-                <div class="info-item"><i class="fa-solid fa-envelope"></i> <span>fareediftikhar70@gmail.com</span></div>
-                <div class="info-item"><i class="fa-solid fa-phone"></i> <span>+92 317 1810082</span></div>
-                <div class="info-item"><i class="fa-brands fa-github"></i> <span>github.com/ghulamfareed</span></div>
-              </div>
+            <div class="about-contact-info">
+              <div class="contact-pill"><i class="fa-solid fa-envelope"></i> fareediftikhar70@gmail.com</div>
+              <div class="contact-pill"><i class="fa-solid fa-phone"></i> +92 317 1810082</div>
+              <div class="contact-pill"><i class="fa-brands fa-linkedin"></i> LinkedIn Profile</div>
             </div>
           </div>
         </div>
@@ -82,89 +89,77 @@
 
     <!-- Projects Section -->
     <section id="projects" class="container section-padding">
-      <h2 class="section-title reveal">Featured Work</h2>
+      <h2 class="section-title reveal">Featured Projects</h2>
       <div class="projects-grid">
-        <!-- Project 1: Grocify -->
+        <!-- Project 1 -->
         <article class="card project-card reveal">
-          <div class="project-inner">
-            <div class="project-header">
-              <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
-              <span class="project-tag">Final Year Project</span>
-              <h3>Grocify – Online Supermart</h3>
-            </div>
-            <p class="project-desc">A complete Android ecosystem with dedicated modules for Customers, Vendors, and Admins. Built to modernize grocery shopping.</p>
-            <ul class="project-features">
-              <li><i class="fa-solid fa-microphone"></i> Urdu/English Voice Search</li>
-              <li><i class="fa-solid fa-brain"></i> AI-Powered Recommendations</li>
-              <li><i class="fa-solid fa-map-location-dot"></i> Live Order Tracking</li>
-              <li><i class="fa-solid fa-wallet"></i> Budget Tracking System</li>
-            </ul>
-            <div class="tech-pill-container">
-              <span class="tech-pill">Kotlin</span><span class="tech-pill">Node.js</span><span class="tech-pill">MySQL</span>
-            </div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <h3>Grocify – Online Supermart</h3>
+            <span class="project-category">Final Year Project</span>
+          </div>
+          <p class="project-desc">A complete Android ecosystem featuring Customer, Vendor, and Admin modules with live tracking and AI recommendations.</p>
+          <ul class="project-features">
+            <li><i class="fa-solid fa-check"></i> Urdu/English Voice Search</li>
+            <li><i class="fa-solid fa-check"></i> AI-Powered Recommendations</li>
+            <li><i class="fa-solid fa-check"></i> Live Order Tracking</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Kotlin</span><span>Node.js</span><span>MySQL</span>
           </div>
         </article>
 
-        <!-- Project 2: ESP32-CAM -->
+        <!-- Project 2 -->
         <article class="card project-card reveal">
-          <div class="project-inner">
-            <div class="project-header">
-              <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
-              <span class="project-tag">IoT & Security</span>
-              <h3>Face Recognition Access System</h3>
-            </div>
-            <p class="project-desc">A smart door lock system that uses ESP32-CAM to recognize faces and grant access via a Wi-Fi-based web interface.</p>
-            <div class="hardware-stack">
-              <strong>Hardware:</strong> ESP32-CAM, FTDI Programmer, 5V Power Supply, Arduino Uno.
-            </div>
-            <ul class="project-features">
-              <li><i class="fa-solid fa-eye"></i> Real-time Face Recognition</li>
-              <li><i class="fa-solid fa-globe"></i> Web Dashboard (HTML/CSS)</li>
-              <li><i class="fa-solid fa-wifi"></i> Wireless Control</li>
-            </ul>
-            <div class="tech-pill-container">
-              <span class="tech-pill">C++</span><span class="tech-pill">Embedded C</span><span class="tech-pill">IoT</span>
-            </div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Face Recognition System</h3>
+            <span class="project-category">IoT & Security</span>
+          </div>
+          <p class="project-desc">Biometric door lock using ESP32-CAM. Recognizes faces in real-time and grants access via Wi-Fi dashboard.</p>
+          <ul class="project-features">
+            <li><i class="fa-solid fa-check"></i> Real-time Face Detection</li>
+            <li><i class="fa-solid fa-check"></i> Web UI Control</li>
+            <li><i class="fa-solid fa-check"></i> Wi-Fi Access Control</li>
+          </ul>
+          <div class="tech-stack">
+            <span>C++</span><span>Arduino</span><span>Embedded C</span>
           </div>
         </article>
 
-        <!-- Project 3: Movie Recommender -->
+        <!-- Project 3 -->
         <article class="card project-card reveal">
-          <div class="project-inner">
-            <div class="project-header">
-              <div class="project-icon"><i class="fa-solid fa-film"></i></div>
-              <span class="project-tag">Machine Learning</span>
-              <h3>Movie Recommendation System</h3>
-            </div>
-            <p class="project-desc">An intelligent web app that suggests movies based on content similarity using advanced NLP techniques.</p>
-            <ul class="project-features">
-              <li><i class="fa-solid fa-bolt"></i> Cosine Similarity Algorithm</li>
-              <li><i class="fa-solid fa-magnifying-glass"></i> TF-IDF Vectorization</li>
-              <li><i class="fa-solid fa-desktop"></i> Streamlit Frontend</li>
-            </ul>
-            <div class="tech-pill-container">
-              <span class="tech-pill">Python</span><span class="tech-pill">Streamlit</span><span class="tech-pill">ML</span>
-            </div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-film"></i></div>
+            <h3>Movie Recommender</h3>
+            <span class="project-category">Machine Learning</span>
+          </div>
+          <p class="project-desc">Smart web app suggesting movies based on content similarity using NLP algorithms (TF-IDF & Cosine Similarity).</p>
+          <ul class="project-features">
+            <li><i class="fa-solid fa-check"></i> Content-Based Filtering</li>
+            <li><i class="fa-solid fa-check"></i> Streamlit Interface</li>
+            <li><i class="fa-solid fa-check"></i> High Precision Match</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Python</span><span>Streamlit</span><span>ML</span>
           </div>
         </article>
 
-        <!-- Project 4: Pizza System -->
+        <!-- Project 4 -->
         <article class="card project-card reveal">
-          <div class="project-inner">
-            <div class="project-header">
-              <div class="project-icon"><i class="fa-solid fa-pizza-slice"></i></div>
-              <span class="project-tag">Web App</span>
-              <h3>Django Pizza Ordering System</h3>
-            </div>
-            <p class="project-desc">Full-stack web application for restaurant management, featuring a custom menu and real-time order processing.</p>
-            <ul class="project-features">
-              <li><i class="fa-solid fa-user-gear"></i> Admin Management</li>
-              <li><i class="fa-solid fa-database"></i> MySQL Backend</li>
-              <li><i class="fa-solid fa-basket-shopping"></i> Seamless Checkout</li>
-            </ul>
-            <div class="tech-pill-container">
-              <span class="tech-pill">Django</span><span class="tech-pill">Python</span><span class="tech-pill">MySQL</span>
-            </div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-pizza-slice"></i></div>
+            <h3>Django Pizza Ordering</h3>
+            <span class="project-category">Web Development</span>
+          </div>
+          <p class="project-desc">Full-stack pizza ordering system with custom menu management, order workflow, and MySQL database.</p>
+          <ul class="project-features">
+            <li><i class="fa-solid fa-check"></i> Admin Dashboard</li>
+            <li><i class="fa-solid fa-check"></i> Order Management</li>
+            <li><i class="fa-solid fa-check"></i> Secure Checkout</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Django</span><span>Python</span><span>MySQL</span>
           </div>
         </article>
       </div>
@@ -172,24 +167,27 @@
 
     <!-- Skills Section -->
     <section id="skills" class="container section-padding">
-      <h2 class="section-title reveal">Technical Arsenal</h2>
-      <div class="skills-wrapper reveal">
-        <div class="skills-column">
-          <h3 class="skill-group-title">Programming & Frameworks</h3>
-          <div class="skill-grid">
-            <div class="skill-box"><span>Kotlin</span><div class="skill-bar"><div class="fill" style="width: 75%;"></div></div><span class="lvl">Intermediate</span></div>
-            <div class="skill-box"><span>Django</span><div class="skill-bar"><div class="fill" style="width: 70%;"></div></div><span class="lvl">Intermediate</span></div>
-            <div class="skill-box"><span>Python</span><div class="skill-bar"><div class="fill" style="width: 60%;"></div></div><span class="lvl">Basic</span></div>
-            <div class="skill-box"><span>Node.js</span><div class="skill-bar"><div class="fill" style="width: 50%;"></div></div><span class="lvl">Basic</span></div>
+      <h2 class="section-title reveal">Technical Skills</h2>
+      <div class="skills-layout reveal">
+        <div class="skills-card">
+          <h3>Languages & Frameworks</h3>
+          <div class="skill-tags">
+            <span class="tag">Kotlin (Intermediate)</span>
+            <span class="tag">Django (Intermediate)</span>
+            <span class="tag">Python (Basic)</span>
+            <span class="tag">Node.js (Basic)</span>
+            <span class="tag">HTML/CSS/JS</span>
+            <span class="tag">C++ (DSA/OOP)</span>
           </div>
         </div>
-        <div class="skills-column">
-          <h3 class="skill-group-title">Data & Systems</h3>
-          <div class="skill-grid">
-            <div class="skill-box"><span>MySQL</span><div class="skill-bar"><div class="fill" style="width: 80%;"></div></div><span class="lvl">Intermediate</span></div>
-            <div class="skill-box"><span>ESP32-CAM / IoT</span><div class="skill-bar"><div class="fill" style="width: 85%;"></div></div><span class="lvl">Intermediate</span></div>
-            <div class="skill-box"><span>Streamlit</span><div class="skill-bar"><div class="fill" style="width: 75%;"></div></div><span class="lvl">Intermediate</span></div>
-            <div class="skill-box"><span>HTML/CSS/JS</span><div class="skill-bar"><div class="fill" style="width: 55%;"></div></div><span class="lvl">Basic</span></div>
+        <div class="skills-card">
+          <h3>Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">ESP32-CAM</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">Git & GitHub</span>
+            <span class="tag">Embedded Systems</span>
           </div>
         </div>
       </div>
@@ -197,27 +195,24 @@
 
     <!-- Contact Section -->
     <section id="contact" class="container section-padding">
-      <div class="reveal text-center">
+      <div class="reveal">
         <h2 class="section-title">Get In Touch</h2>
-        <p class="contact-subtitle">Have a project in mind or just want to say hi? My inbox is always open.</p>
-        <div class="contact-container">
-          <div class="card contact-card">
+        <div class="contact-wrapper">
+          <div class="card contact-form-card">
             <form id="contactForm" class="contact-form">
-              <div class="input-row">
-                <div class="input-group">
-                  <label>Full Name</label>
-                  <input type="text" id="name" placeholder="Ghulam Fareed" required>
-                </div>
-                <div class="input-group">
-                  <label>Email Address</label>
-                  <input type="email" id="email" placeholder="fareed@example.com" required>
-                </div>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
               </div>
-              <div class="input-group">
-                <label>Your Message</label>
-                <textarea id="message" rows="5" placeholder="Let's build something amazing together..." required></textarea>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
             </form>
           </div>
         </div>
@@ -226,18 +221,12 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="#" class="logo">GF<span>.</span></a>
-        <p>Software Developer from Okara, Pakistan.</p>
-      </div>
-      <div class="footer-links">
-        <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-        <p class="copyright">&copy; <span id="year"></span> Ghulam Fareed. Built with <i class="fa-solid fa-heart" style="color: #ef4444;"></i></p>
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Ghulam Fareed. Handcrafted with precision.</p>
+      <div class="footer-socials">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:fareediftikhar70@gmail.com"><i class="fa-solid fa-envelope"></i></a>
       </div>
     </div>
   </footer>
