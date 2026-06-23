@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ghulam Fareed | Software Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo">GF.</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="downloadResume" class="btn btn-outline">Resume</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1 class="reveal">Ghulam Fareed</h1>
+      <p class="reveal">BSCS Graduate & Aspiring Software Developer specializing in building robust web applications and intelligent systems.</p>
+      <div class="hero-btns reveal">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </section>
+
+    <section id="about" class="container reveal">
+      <h2 class="section-title">About Me</h2>
+      <div class="card">
+        <p>
+          I am a motivated Computer Science undergraduate from COMSATS University Islamabad.
+          With a strong foundation in <strong>Django, Python, and Kotlin</strong>, I enjoy solving complex problems
+          ranging from full-stack web development to embedded systems. My goal is to contribute to
+          innovative projects that make a real-world impact.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="container reveal">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="card project-card">
+          <h3>Pizza Ordering System</h3>
+          <p>A full-stack Django application with a MySQL backend, featuring a complete order workflow and menu management.</p>
+          <div class="skill-badge" style="margin-top: 1rem; width: fit-content;">Django</div>
+        </article>
+
+        <article class="card project-card">
+          <h3>Movie Recommender</h3>
+          <p>Machine Learning project using Python and Streamlit to provide personalized movie recommendations based on content filtering.</p>
+          <div class="skill-badge" style="margin-top: 1rem; width: fit-content;">Python</div>
+        </article>
+
+        <article class="card project-card">
+          <h3>Online Grocery App</h3>
+          <p>Native Android application built with Kotlin, featuring Node.js API integration and real-time database management.</p>
+          <div class="skill-badge" style="margin-top: 1rem; width: fit-content;">Kotlin</div>
+        </article>
+
+        <article class="card project-card">
+          <h3>ESP32-CAM Security</h3>
+          <p>Embedded systems project implementing face recognition for secure access control using C++ and ESP32 hardware.</p>
+          <div class="skill-badge" style="margin-top: 1rem; width: fit-content;">C++</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container reveal">
+      <h2 class="section-title">Technical Expertise</h2>
+      <div class="skills-container">
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">Django</span>
+        <span class="skill-badge">Kotlin</span>
+        <span class="skill-badge">MySQL</span>
+        <span class="skill-badge">C++ (DSA/OOP)</span>
+        <span class="skill-badge">Node.js</span>
+        <span class="skill-badge">HTML/CSS</span>
+        <span class="skill-badge">Git</span>
+        <span class="skill-badge">Embedded Systems</span>
+      </div>
+    </section>
+
+    <section id="contact" class="container reveal">
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="card">
+        <form id="contactForm" class="contact-form">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="How can I help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Ghulam Fareed. Okara, Punjab, Pakistan.</p>
+      <p style="font-size: 0.8rem; margin-top: 0.5rem;">Built with Passion & Precision</p>
+    </div>
+  </footer>
+
+  <!-- Hidden resume section for PDF generation if needed -->
+  <div id="resume" style="display: none;">
+     <!-- Content for PDF generation can be here,
+          but usually it's better to just link the .docx or a static .pdf -->
+     <h1>Ghulam Fareed</h1>
+     <p>fareediftikhar70@gmail.com</p>
+     <!-- ... rest of resume ... -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
