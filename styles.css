@@ -333,7 +333,6 @@ body {
 }
 
 .contact-pill {
-  background: rgba(255,255,255,0.05);
   padding: 0.8rem 1.2rem;
   border-radius: 12px;
   font-size: 0.9rem;
@@ -341,11 +340,35 @@ body {
   align-items: center;
   gap: 0.8rem;
   border: 1px solid var(--border);
+  text-decoration: none;
+  transition: var(--transition);
 }
 
-.contact-pill i {
-  color: var(--primary);
+.contact-pill:hover {
+  transform: translateX(5px);
+  background: rgba(255, 255, 255, 0.08);
 }
+
+.contact-pill.email-pill {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+}
+.contact-pill.email-pill i { color: #fbbf24; }
+
+.contact-pill.phone-pill {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+}
+.contact-pill.phone-pill i { color: #34d399; }
+
+.contact-pill.linkedin-pill {
+  background: rgba(14, 165, 233, 0.1);
+  border-color: rgba(14, 165, 233, 0.2);
+  color: #38bdf8;
+}
+.contact-pill.linkedin-pill i { color: #38bdf8; }
 
 /* Projects */
 .project-card {
