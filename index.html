@@ -2,36 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ghulam Fareed | Software Developer & BSSE Graduate</title>
-  <meta name="description" content="Portfolio of Ghulam Fareed - BSSE Graduate from COMSATS & Software Development Intern at Ready2Solutions. Specialized in ASP.NET, C#, Kotlin, Python/Django, and Computer Vision." />
+  <meta name="description" content="Official portfolio of Ghulam Fareed - Software Engineering Graduate (BSSE) from COMSATS University Islamabad & Software Development Intern at Ready2Solutions. Full-Stack Web, Native Android & Embedded AI." />
+  <meta name="keywords" content="Ghulam Fareed, Software Developer, BSSE, COMSATS, ASP.NET, C#, Kotlin, Android, Django, Python, MySQL, Embedded AI, Portfolio" />
+  <meta name="author" content="Ghulam Fareed" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ghulam Fareed | Software Developer Portfolio" />
+  <meta property="og:description" content="BSSE Graduate from COMSATS & Software Development Intern at Ready2Solutions. View projects, skills, and download CV." />
+  <meta property="og:image" content="profilepic.png" />
 
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Ambient Glow Effects -->
   <div class="glow-bg"></div>
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
 
   <!-- Header Navigation -->
-  <header class="site-header">
+  <header class="site-header" id="siteHeader">
     <div class="container nav-container">
-      <a href="#" class="logo">Ghulam Fareed<span>.</span></a>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+      <a href="#" class="logo" aria-label="Ghulam Fareed Home">
+        <span class="logo-code">&lt;</span>GhulamFareed<span class="logo-accent">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav" id="desktopNav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
+
       <div class="header-cta">
         <a href="Ghulam_Fareed_CV_A4.pdf" target="_blank" download="Ghulam_Fareed_CV.pdf" class="btn btn-primary btn-sm cv-download-trigger">
-          <span>Download CV</span> <i class="fa-solid fa-file-arrow-down"></i>
+          <i class="fa-solid fa-file-arrow-down"></i> <span>Download CV</span>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <div class="mobile-nav-links">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#resume" class="mobile-nav-link">Resume</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </div>
+      <div class="mobile-drawer-footer">
+        <a href="Ghulam_Fareed_CV_A4.pdf" target="_blank" download="Ghulam_Fareed_CV.pdf" class="btn btn-primary btn-full cv-download-trigger">
+          <i class="fa-solid fa-file-arrow-down"></i> Download CV (PDF)
         </a>
       </div>
     </div>
@@ -42,27 +80,100 @@
     <section class="hero container">
       <div class="hero-grid">
         <div class="hero-content">
+          <!-- Availability Badge -->
           <div class="profile-badge reveal">
-            <span class="status-dot"></span> Available for Hire & Opportunities
+            <span class="status-dot"></span>
+            <span>Available for Full-Time Roles &amp; Projects</span>
           </div>
-          <h1 class="reveal">Building <span class="gradient-text">Scalable</span> Software & Mobile Solutions</h1>
-          <p class="hero-tagline reveal">Ghulam Fareed — Software Developer | BSSE Graduate</p>
-          <p class="hero-desc reveal">
-            Software Engineering graduate from COMSATS University Islamabad & Software Development Intern at Ready2Solutions. 
-            Passionate about developing enterprise web platforms, native Android applications, and intelligent embedded systems.
+
+          <h1 class="reveal">
+            Engineering <span class="gradient-text">Scalable</span> Software &amp; Mobile Experiences
+          </h1>
+
+          <p class="hero-tagline reveal">
+            <span class="tagline-role">Ghulam Fareed</span> — Software Developer &bull; BSSE Graduate @ COMSATS
           </p>
+
+          <p class="hero-desc reveal">
+            Software Engineering graduate from COMSATS University Islamabad (Sahiwal Campus) and Software Development Intern at <strong>Ready2Solutions</strong>. Specialized in building enterprise web platforms in <strong>ASP.NET &amp; C#</strong>, native Android applications with <strong>Kotlin</strong>, and smart <strong>Computer Vision</strong> embedded systems.
+          </p>
+
+          <!-- Quick Tech Stack Chips -->
+          <div class="hero-chips reveal">
+            <span class="chip"><i class="fa-brands fa-microsoft"></i> ASP.NET / C#</span>
+            <span class="chip"><i class="fa-brands fa-android"></i> Android / Kotlin</span>
+            <span class="chip"><i class="fa-brands fa-python"></i> Django / Python</span>
+            <span class="chip"><i class="fa-solid fa-database"></i> MySQL</span>
+            <span class="chip"><i class="fa-solid fa-microchip"></i> Computer Vision</span>
+          </div>
+
+          <!-- Hero Action Buttons -->
           <div class="hero-btns reveal">
-            <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-down"></i></a>
-            <a href="Ghulam_Fareed_CV_A4.pdf" target="_blank" download="Ghulam_Fareed_CV.pdf" class="btn btn-outline cv-download-trigger">
-              <i class="fa-solid fa-file-pdf"></i> Download CV
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span> <i class="fa-solid fa-arrow-down"></i>
             </a>
-            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+            <a href="Ghulam_Fareed_CV_A4.pdf" target="_blank" download="Ghulam_Fareed_CV.pdf" class="btn btn-outline cv-download-trigger">
+              <i class="fa-solid fa-file-pdf"></i> <span>Download CV</span>
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <span>Let's Talk</span> <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
+
+        <!-- Profile Showcase -->
         <div class="hero-image reveal">
-          <div class="image-wrapper">
-            <img src="profilepic.png" alt="Ghulam Fareed - Software Developer">
+          <div class="image-showcase">
+            <div class="image-wrapper">
+              <img src="profilepic.png" alt="Ghulam Fareed - Software Developer" loading="eager">
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top">
+              <div class="badge-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <div class="badge-text">
+                <span class="badge-label">Current Role</span>
+                <span class="badge-value">Intern @ Ready2Solutions</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom">
+              <div class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="badge-text">
+                <span class="badge-label">Education</span>
+                <span class="badge-value">BSSE (COMSATS)</span>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Stats Ribbon -->
+    <section class="container stats-ribbon-section">
+      <div class="stats-ribbon card reveal">
+        <div class="stat-box">
+          <div class="stat-number">BSSE</div>
+          <div class="stat-title">Software Engineering</div>
+          <div class="stat-sub">COMSATS Sahiwal</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-box">
+          <div class="stat-number">4+</div>
+          <div class="stat-title">Flagship Projects</div>
+          <div class="stat-sub">Web, Mobile &amp; AI</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-box">
+          <div class="stat-number">B2B</div>
+          <div class="stat-title">Enterprise Experience</div>
+          <div class="stat-sub">BusinessMarket.pk</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-box">
+          <div class="stat-number">65+ <span class="stat-unit">WPM</span></div>
+          <div class="stat-title">Typing Speed</div>
+          <div class="stat-sub">Govt-Certified</div>
         </div>
       </div>
     </section>
@@ -70,54 +181,85 @@
     <!-- About Section -->
     <section id="about" class="container section-padding">
       <div class="reveal">
+        <span class="section-tag"><i class="fa-regular fa-user"></i> Introduction</span>
         <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">Dedicated to engineering clean, efficient, and user-centered digital solutions.</p>
+        <p class="section-subtitle">A problem solver bridging full-stack web architectures, mobile ecosystems, and hardware intelligence.</p>
+        
         <div class="card about-card">
           <div class="about-grid">
             <div class="about-text">
               <p>
-                I am a <strong>Software Engineering graduate (BSSE)</strong> from <strong>COMSATS University Islamabad – Sahiwal Campus</strong> with hands-on experience in full-stack web and native Android application development.
+                I am a <strong>Software Engineering graduate (BSSE)</strong> from <strong>COMSATS University Islamabad – Sahiwal Campus</strong>, equipped with a comprehensive background in software development, data structures, algorithms, and clean software architecture.
               </p>
               <p>
-                Currently, I am working as a <strong>Software Development Intern at Ready2Solutions</strong>, contributing to dynamic business portals using ASP.NET, C#, JavaScript, and MySQL. I have a strong foundation in Object-Oriented Programming (OOP), Data Structures &amp; Algorithms (DSA), Relational Database Design, and Computer Vision systems.
+                Currently, I work as a <strong>Software Development Intern at Ready2Solutions</strong>, contributing directly to the B2B portal <strong>BusinessMarket.pk</strong> using <strong>ASP.NET, Visual Basic, C#, JavaScript, and MySQL</strong>. I take pride in developing user-centric, high-performance interfaces backed by scalable relational database schemas.
               </p>
-              <div class="stats-grid">
-                <div class="stat-item">
-                  <span class="stat-label">Degree</span>
-                  <span class="stat-value highlight">BS Software Engineering</span>
+              <p>
+                My project portfolio spans end-to-end full-stack applications in <strong>Django/Python</strong>, native Android applications crafted in <strong>Kotlin with MVVM &amp; Jetpack</strong>, and embedded AI systems leveraging <strong>Computer Vision &amp; microcontrollers</strong> for biometric security.
+              </p>
+
+              <!-- Highlights Grid -->
+              <div class="info-badges-grid">
+                <div class="info-badge-item">
+                  <span class="info-label"><i class="fa-solid fa-location-dot"></i> Location</span>
+                  <span class="info-value">Okara, Punjab, Pakistan</span>
                 </div>
-                <div class="stat-item">
-                  <span class="stat-label">Institution</span>
-                  <span class="stat-value">COMSATS University</span>
+                <div class="info-badge-item">
+                  <span class="info-label"><i class="fa-solid fa-graduation-cap"></i> Major</span>
+                  <span class="info-value">Software Engineering (BSSE)</span>
                 </div>
-                <div class="stat-item">
-                  <span class="stat-label">Current Role</span>
-                  <span class="stat-value highlight">Software Dev Intern</span>
+                <div class="info-badge-item">
+                  <span class="info-label"><i class="fa-solid fa-language"></i> Languages</span>
+                  <span class="info-value">English (Professional), Urdu (Native)</span>
                 </div>
-                <div class="stat-item">
-                  <span class="stat-label">Location</span>
-                  <span class="stat-value">Okara, Punjab, PK</span>
+                <div class="info-badge-item">
+                  <span class="info-label"><i class="fa-solid fa-award"></i> Diploma</span>
+                  <span class="info-value">Computer Science (Govt. Certified)</span>
                 </div>
               </div>
             </div>
+
+            <!-- Quick Connect Sidebar -->
             <div class="about-contact-info">
-              <a href="mailto:fareediftikhar70@gmail.com" class="email-pill contact-pill">
-                <i class="fa-solid fa-envelope"></i> fareediftikhar70@gmail.com
-              </a>
-              <div class="phone-pill contact-pill">
-                <i class="fa-solid fa-phone"></i> +92 328 5593031
+              <div class="contact-header">
+                <h4>Quick Contacts</h4>
+                <p>Click any pill to copy or connect directly.</p>
               </div>
-              <div class="phone-pill contact-pill">
-                <i class="fa-solid fa-mobile-screen"></i> +92 317 1810082
-              </div>
-              <a href="https://linkedin.com/in/ghulam-farid" target="_blank" rel="noopener noreferrer" class="linkedin-pill contact-pill">
-                <i class="fa-brands fa-linkedin"></i> linkedin.com/in/ghulam-farid
+
+              <button class="contact-pill email-pill copy-trigger" data-copy="fareediftikhar70@gmail.com" title="Click to copy email">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="pill-text">fareediftikhar70@gmail.com</span>
+                <span class="copy-badge"><i class="fa-regular fa-copy"></i></span>
+              </button>
+
+              <button class="contact-pill phone-pill copy-trigger" data-copy="+923285593031" title="Click to copy phone">
+                <i class="fa-solid fa-phone"></i>
+                <span class="pill-text">+92 328 5593031</span>
+                <span class="copy-badge"><i class="fa-regular fa-copy"></i></span>
+              </button>
+
+              <button class="contact-pill phone-pill copy-trigger" data-copy="+923171810082" title="Click to copy phone">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span class="pill-text">+92 317 1810082</span>
+                <span class="copy-badge"><i class="fa-regular fa-copy"></i></span>
+              </button>
+
+              <a href="https://linkedin.com/in/ghulam-farid" target="_blank" rel="noopener noreferrer" class="contact-pill linkedin-pill">
+                <i class="fa-brands fa-linkedin"></i>
+                <span class="pill-text">linkedin.com/in/ghulam-farid</span>
+                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
               </a>
-              <a href="https://github.com/fareediftikhar70-jpg" target="_blank" rel="noopener noreferrer" class="github-pill contact-pill">
-                <i class="fa-brands fa-github"></i> github.com/fareediftikhar70-jpg
+
+              <a href="https://github.com/fareediftikhar70-jpg" target="_blank" rel="noopener noreferrer" class="contact-pill github-pill">
+                <i class="fa-brands fa-github"></i>
+                <span class="pill-text">github.com/fareediftikhar70-jpg</span>
+                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
               </a>
-              <a href="Ghulam_Fareed_CV_A4.pdf" target="_blank" download="Ghulam_Fareed_CV.pdf" class="cv-pill contact-pill cv-download-trigger">
-                <i class="fa-solid fa-file-pdf"></i> View &amp; Download CV
+
+              <a href="Ghulam_Fareed_CV_A4.pdf" target="_blank" download="Ghulam_Fareed_CV.pdf" class="contact-pill cv-pill cv-download-trigger">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span class="pill-text">Download CV (A4 PDF)</span>
+                <i class="fa-solid fa-download external-icon"></i>
               </a>
             </div>
           </div>
@@ -128,187 +270,222 @@
     <!-- Work Experience Section -->
     <section id="experience" class="container section-padding">
       <div class="reveal">
+        <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Career Journey</span>
         <h2 class="section-title">Work Experience</h2>
-        <p class="section-subtitle">Real-world software engineering and industry impact.</p>
+        <p class="section-subtitle">Real-world software engineering, database integration, and enterprise portals.</p>
 
-        <article class="card experience-card">
-          <div class="experience-header">
-            <div class="experience-title-group">
-              <h3>Software Development Intern</h3>
-              <div class="experience-company">
-                Ready2Solutions 
-                <span class="project-tag-pill">Project: BusinessMarket.pk</span>
+        <div class="experience-timeline">
+          <article class="card experience-card">
+            <div class="experience-header">
+              <div class="experience-title-group">
+                <div class="exp-role-row">
+                  <h3>Software Development Intern</h3>
+                  <span class="date-badge"><i class="fa-regular fa-clock"></i> 2026 – Present</span>
+                </div>
+                <div class="experience-company">
+                  <span class="company-name">Ready2Solutions</span>
+                  <span class="company-dot">&bull;</span>
+                  <span class="company-project"><i class="fa-solid fa-cube"></i> Project: <strong>BusinessMarket.pk</strong></span>
+                </div>
               </div>
             </div>
-            <span class="date-badge"><i class="fa-regular fa-calendar"></i> 2026 – Present</span>
-          </div>
 
-          <ul class="experience-bullets">
-            <li>
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Working on the development of a B2B business portal for <strong>BusinessMarket.pk</strong>, transforming the platform into a dynamic and user-friendly portal.</span>
-            </li>
-            <li>
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Developing dynamic pages, database-driven workflows, and user-side features using <strong>ASP.NET, Visual Basic, HTML, CSS, JavaScript, and MySQL</strong>.</span>
-            </li>
-            <li>
-              <i class="fa-solid fa-circle-check"></i>
-              <span>Contributing to backend integration, database management, UI development, and overall portal functionality.</span>
-            </li>
-          </ul>
+            <p class="experience-summary">
+              Engaged in the end-to-end development of <strong>BusinessMarket.pk</strong>, transforming a high-traffic B2B marketplace into a responsive, secure, and user-friendly digital ecosystem.
+            </p>
 
-          <div class="tech-stack">
-            <span>ASP.NET</span>
-            <span>C#</span>
-            <span>Visual Basic</span>
-            <span>JavaScript</span>
-            <span>MySQL</span>
-            <span>HTML5 / CSS3</span>
-          </div>
-        </article>
+            <ul class="experience-bullets">
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Architecting and implementing dynamic pages, database-driven workflows, and customer/vendor features using <strong>ASP.NET, Visual Basic, HTML5, CSS3, JavaScript, and MySQL</strong>.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Handling backend integrations, stored procedures, SQL schema design, and seamless data binding across transaction modules.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Collaborating across the software development lifecycle (SDLC) to elevate UI responsiveness, optimize load times, and implement security standards.</span>
+              </li>
+            </ul>
+
+            <div class="exp-footer">
+              <div class="tech-stack">
+                <span>ASP.NET</span>
+                <span>C#</span>
+                <span>Visual Basic</span>
+                <span>JavaScript</span>
+                <span>MySQL</span>
+                <span>HTML5 / CSS3</span>
+                <span>SDLC</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section with Interactive Filters -->
     <section id="projects" class="container section-padding">
       <div class="reveal">
+        <span class="section-tag"><i class="fa-solid fa-code"></i> Portfolio Showcase</span>
         <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">Projects featured in my CV spanning Web, Mobile, and Embedded AI systems.</p>
+        <p class="section-subtitle">Verified projects directly from my CV across full-stack web, native Android, and computer vision.</p>
+
+        <!-- Project Category Filters -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web &amp; Enterprise</button>
+          <button class="filter-btn" data-filter="mobile">Native Android</button>
+          <button class="filter-btn" data-filter="ai">AI &amp; Embedded</button>
+        </div>
       </div>
 
       <div class="projects-grid">
         <!-- Project 1: Chezious Website Clone -->
-        <article class="card project-card reveal">
-          <div>
+        <article class="card project-card reveal" data-category="web">
+          <div class="project-card-inner">
             <div class="project-header">
-              <div class="project-icon"><i class="fa-solid fa-utensils"></i></div>
+              <div class="project-icon icon-web"><i class="fa-solid fa-utensils"></i></div>
               <div class="project-title-area">
+                <span class="project-category">Full-Stack Web</span>
                 <h3>Chezious Website Clone</h3>
-                <span class="project-category">Full-Stack Web (Django)</span>
               </div>
             </div>
+            
             <p class="project-desc">
-              Built a full-stack clone of the Chezious website using Django, featuring a custom HTML/CSS front end and Django's admin panel for backend management.
+              Built a full-stack clone of the Chezious food platform using Django, pairing a custom responsive front end with Django's administrative engine for complete catalog and order governance.
             </p>
+
             <ul class="project-features">
-              <li><i class="fa-solid fa-check"></i> Browsable product menu with interactive categories</li>
-              <li><i class="fa-solid fa-check"></i> End-to-end order placement workflow connected to MySQL</li>
-              <li><i class="fa-solid fa-check"></i> Django admin panel for menu, orders, and user management</li>
+              <li><i class="fa-solid fa-circle-check"></i> Browsable interactive menu with categories &amp; dynamic pricing</li>
+              <li><i class="fa-solid fa-circle-check"></i> End-to-end customer order placement connected to MySQL</li>
+              <li><i class="fa-solid fa-circle-check"></i> Django admin dashboard for real-time inventory and sales tracking</li>
             </ul>
-          </div>
-          <div class="project-footer">
-            <div class="tech-stack">
-              <span>Django</span><span>Python</span><span>HTML5</span><span>CSS3</span><span>MySQL</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/fareediftikhar70-jpg/portfolio" target="_blank" class="project-link-btn">
-                <i class="fa-brands fa-github"></i> View Repository <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
+
+            <div class="project-footer">
+              <div class="tech-stack">
+                <span>Django</span><span>Python</span><span>HTML5</span><span>CSS3</span><span>MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/fareediftikhar70-jpg/portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github"></i> <span>Repository</span>
+                </a>
+              </div>
             </div>
           </div>
         </article>
 
         <!-- Project 2: Online Grocery Supermart Android Application -->
-        <article class="card project-card reveal">
-          <div>
+        <article class="card project-card reveal" data-category="mobile">
+          <div class="project-card-inner">
             <div class="project-header">
-              <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <div class="project-icon icon-mobile"><i class="fa-solid fa-cart-shopping"></i></div>
               <div class="project-title-area">
+                <span class="project-category">Native Android</span>
                 <h3>Online Grocery Supermart</h3>
-                <span class="project-category">Native Android Application</span>
               </div>
             </div>
+            
             <p class="project-desc">
-              Developed a native Android grocery ordering application in Kotlin, integrated with a REST API and MySQL backend for efficient item management and checkout.
+              Developed a native Android grocery ordering app in Kotlin, powered by REST APIs and a MySQL backend. Delivers quick grocery discovery, cart persistence, and real-time order processing.
             </p>
+
             <ul class="project-features">
-              <li><i class="fa-solid fa-check"></i> Secure user authentication and profile management</li>
-              <li><i class="fa-solid fa-check"></i> Persistent data storage, real-time product search &amp; filtering</li>
-              <li><i class="fa-solid fa-check"></i> Complete end-to-end order processing and cart architecture</li>
+              <li><i class="fa-solid fa-circle-check"></i> Secure user authentication and persistent profile session</li>
+              <li><i class="fa-solid fa-circle-check"></i> Real-time keyword product search, category browsing, and cart state</li>
+              <li><i class="fa-solid fa-circle-check"></i> Robust MVVM architecture with separation of concerns and Jetpack components</li>
             </ul>
-          </div>
-          <div class="project-footer">
-            <div class="tech-stack">
-              <span>Kotlin</span><span>Android SDK</span><span>REST API</span><span>MySQL</span><span>MVVM</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/fareediftikhar70-jpg/portfolio" target="_blank" class="project-link-btn">
-                <i class="fa-brands fa-github"></i> View Repository <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
+
+            <div class="project-footer">
+              <div class="tech-stack">
+                <span>Kotlin</span><span>Android SDK</span><span>REST API</span><span>MySQL</span><span>MVVM</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/fareediftikhar70-jpg/portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github"></i> <span>Repository</span>
+                </a>
+              </div>
             </div>
           </div>
         </article>
 
         <!-- Project 3: Face Recognition and Detection System -->
-        <article class="card project-card reveal">
-          <div>
+        <article class="card project-card reveal" data-category="ai">
+          <div class="project-card-inner">
             <div class="project-header">
-              <div class="project-icon"><i class="fa-solid fa-camera"></i></div>
+              <div class="project-icon icon-ai"><i class="fa-solid fa-camera"></i></div>
               <div class="project-title-area">
-                <h3>Face Recognition &amp; Detection</h3>
-                <span class="project-category">AI Hardware &amp; Computer Vision</span>
+                <span class="project-category">AI Hardware &amp; Vision</span>
+                <h3>Face Recognition System</h3>
               </div>
             </div>
+            
             <p class="project-desc">
-              Embedded AI security system combining hardware and computer vision algorithms to provide automated, real-time facial recognition and door-access control.
+              Embedded AI biometric security solution combining camera hardware and computer vision algorithms to perform on-device facial detection and automated door-access authorization.
             </p>
+
             <ul class="project-features">
-              <li><i class="fa-solid fa-check"></i> Real-time image capture &amp; processing using camera module</li>
-              <li><i class="fa-solid fa-check"></i> Computer vision face detection algorithms</li>
-              <li><i class="fa-solid fa-check"></i> Automated door-access mechanism unlocking upon verified recognition</li>
+              <li><i class="fa-solid fa-circle-check"></i> Real-time frame capture &amp; image processing via camera module</li>
+              <li><i class="fa-solid fa-circle-check"></i> Computer vision face verification algorithms</li>
+              <li><i class="fa-solid fa-circle-check"></i> Microcontroller-integrated relay trigger unlocking upon verified identity</li>
             </ul>
-          </div>
-          <div class="project-footer">
-            <div class="tech-stack">
-              <span>Embedded C</span><span>Computer Vision</span><span>Microcontroller</span><span>ESP32</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/fareediftikhar70-jpg/portfolio" target="_blank" class="project-link-btn">
-                <i class="fa-brands fa-github"></i> View Repository <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
+
+            <div class="project-footer">
+              <div class="tech-stack">
+                <span>Embedded C</span><span>Computer Vision</span><span>Microcontroller</span><span>ESP32</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/fareediftikhar70-jpg/portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github"></i> <span>Repository</span>
+                </a>
+              </div>
             </div>
           </div>
         </article>
 
         <!-- Project 4: BusinessMarket.pk B2B Portal -->
-        <article class="card project-card reveal">
-          <div>
+        <article class="card project-card reveal" data-category="web">
+          <div class="project-card-inner">
             <div class="project-header">
-              <div class="project-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <div class="project-icon icon-enterprise"><i class="fa-solid fa-network-wired"></i></div>
               <div class="project-title-area">
-                <h3>BusinessMarket.pk B2B Portal</h3>
-                <span class="project-category">Enterprise Web Portal</span>
+                <span class="project-category">Enterprise Portal</span>
+                <h3>BusinessMarket.pk Portal</h3>
               </div>
             </div>
+            
             <p class="project-desc">
-              Enterprise B2B business portal engineered at Ready2Solutions, delivering dynamic workflows, user-side transaction capabilities, and robust data management.
+              Enterprise B2B commercial portal developed at Ready2Solutions, enabling companies to publish catalogs, conduct business transactions, and streamline trade interactions.
             </p>
+
             <ul class="project-features">
-              <li><i class="fa-solid fa-check"></i> Dynamic data-driven pages &amp; workflows in ASP.NET</li>
-              <li><i class="fa-solid fa-check"></i> Scalable relational database architecture on MySQL</li>
-              <li><i class="fa-solid fa-check"></i> Responsive UI and seamless backend service integration</li>
+              <li><i class="fa-solid fa-circle-check"></i> High-speed data-driven pages built on ASP.NET &amp; C#</li>
+              <li><i class="fa-solid fa-circle-check"></i> Relational database design on MySQL with optimized query flows</li>
+              <li><i class="fa-solid fa-circle-check"></i> Client-side interactive dashboards and responsive enterprise UI</li>
             </ul>
-          </div>
-          <div class="project-footer">
-            <div class="tech-stack">
-              <span>ASP.NET</span><span>C#</span><span>JavaScript</span><span>Visual Basic</span><span>MySQL</span>
-            </div>
-            <div class="project-links">
-              <a href="#experience" class="project-link-btn">
-                <i class="fa-solid fa-building"></i> View Experience Details <i class="fa-solid fa-arrow-right"></i>
-              </a>
+
+            <div class="project-footer">
+              <div class="tech-stack">
+                <span>ASP.NET</span><span>C#</span><span>JavaScript</span><span>Visual Basic</span><span>MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#experience" class="btn btn-outline btn-sm">
+                  <i class="fa-solid fa-building"></i> <span>Experience Details</span>
+                </a>
+              </div>
             </div>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- Technical Skills Section -->
+    <!-- Technical Skills Section (Modern Bento Matrix) -->
     <section id="skills" class="container section-padding">
       <div class="reveal">
+        <span class="section-tag"><i class="fa-solid fa-layer-group"></i> Technical Arsenal</span>
         <h2 class="section-title">Technical Skills</h2>
-        <p class="section-subtitle">Categorized competencies directly from my CV and hands-on project work.</p>
+        <p class="section-subtitle">Categorized competencies verified from academic coursework, industry internship, and project builds.</p>
       </div>
 
       <div class="skills-categories-grid reveal">
@@ -316,14 +493,14 @@
         <div class="skill-category-card">
           <div class="skill-category-header">
             <div class="skill-category-icon"><i class="fa-solid fa-code"></i></div>
-            <h3>Programming</h3>
+            <h3>Programming Languages</h3>
           </div>
           <div class="skills-tags-wrap">
-            <span class="skill-pill highlight">C#</span>
-            <span class="skill-pill highlight">Kotlin</span>
-            <span class="skill-pill">C++ (DSA, OOP)</span>
-            <span class="skill-pill">Python</span>
-            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill highlight"><i class="fa-solid fa-check"></i> C#</span>
+            <span class="skill-pill highlight"><i class="fa-solid fa-check"></i> Kotlin</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> C++ (DSA &amp; OOP)</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> Python</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> JavaScript</span>
           </div>
         </div>
 
@@ -334,12 +511,12 @@
             <h3>Web Development</h3>
           </div>
           <div class="skills-tags-wrap">
-            <span class="skill-pill highlight">ASP.NET</span>
-            <span class="skill-pill highlight">Django</span>
-            <span class="skill-pill">HTML5 / CSS3</span>
-            <span class="skill-pill">JavaScript</span>
-            <span class="skill-pill">MySQL</span>
-            <span class="skill-pill">Visual Basic</span>
+            <span class="skill-pill highlight"><i class="fa-solid fa-check"></i> ASP.NET</span>
+            <span class="skill-pill highlight"><i class="fa-solid fa-check"></i> Django</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> HTML5 / CSS3</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> JavaScript</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> MySQL</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> Visual Basic</span>
           </div>
         </div>
 
@@ -350,11 +527,11 @@
             <h3>Mobile Development</h3>
           </div>
           <div class="skills-tags-wrap">
-            <span class="skill-pill highlight">Native Android</span>
-            <span class="skill-pill highlight">Kotlin</span>
-            <span class="skill-pill">MVVM Architecture</span>
-            <span class="skill-pill">Jetpack Components</span>
-            <span class="skill-pill">REST API Integration</span>
+            <span class="skill-pill highlight"><i class="fa-solid fa-check"></i> Native Android</span>
+            <span class="skill-pill highlight"><i class="fa-solid fa-check"></i> Kotlin</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> MVVM Pattern</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> Android Jetpack</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> REST API Binding</span>
           </div>
         </div>
 
@@ -362,13 +539,13 @@
         <div class="skill-category-card">
           <div class="skill-category-header">
             <div class="skill-category-icon"><i class="fa-solid fa-database"></i></div>
-            <h3>Databases</h3>
+            <h3>Databases &amp; Design</h3>
           </div>
           <div class="skills-tags-wrap">
-            <span class="skill-pill highlight">MySQL</span>
-            <span class="skill-pill">Relational DB Design</span>
-            <span class="skill-pill">SQL Queries &amp; Joins</span>
-            <span class="skill-pill">Data Modeling</span>
+            <span class="skill-pill highlight"><i class="fa-solid fa-check"></i> MySQL</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> Relational DB Design</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> SQL Queries &amp; Joins</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> Schema Modeling</span>
           </div>
         </div>
 
@@ -376,13 +553,13 @@
         <div class="skill-category-card">
           <div class="skill-category-header">
             <div class="skill-category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-            <h3>Tools &amp; Platforms</h3>
+            <h3>Tools &amp; Workflow</h3>
           </div>
           <div class="skills-tags-wrap">
-            <span class="skill-pill">Visual Studio</span>
-            <span class="skill-pill">Android Studio</span>
-            <span class="skill-pill highlight">Git &amp; GitHub</span>
-            <span class="skill-pill">Figma</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> Visual Studio</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> Android Studio</span>
+            <span class="skill-pill highlight"><i class="fa-solid fa-check"></i> Git &amp; GitHub</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> Figma</span>
           </div>
         </div>
 
@@ -390,13 +567,13 @@
         <div class="skill-category-card">
           <div class="skill-category-header">
             <div class="skill-category-icon"><i class="fa-solid fa-microchip"></i></div>
-            <h3>Embedded &amp; AI</h3>
+            <h3>Embedded Systems &amp; AI</h3>
           </div>
           <div class="skills-tags-wrap">
-            <span class="skill-pill highlight">Face Recognition</span>
-            <span class="skill-pill highlight">Computer Vision</span>
-            <span class="skill-pill">Embedded C</span>
-            <span class="skill-pill">Microcontroller Programming</span>
+            <span class="skill-pill highlight"><i class="fa-solid fa-check"></i> Face Recognition</span>
+            <span class="skill-pill highlight"><i class="fa-solid fa-check"></i> Computer Vision</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> Embedded C</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> Microcontroller Programming</span>
           </div>
         </div>
 
@@ -404,12 +581,12 @@
         <div class="skill-category-card">
           <div class="skill-category-header">
             <div class="skill-category-icon"><i class="fa-solid fa-palette"></i></div>
-            <h3>Design &amp; Office</h3>
+            <h3>Design &amp; Productivity</h3>
           </div>
           <div class="skills-tags-wrap">
-            <span class="skill-pill">Adobe Photoshop</span>
-            <span class="skill-pill">CorelDRAW</span>
-            <span class="skill-pill">MS Office Suite</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> Adobe Photoshop</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> CorelDRAW</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> MS Office Suite</span>
           </div>
         </div>
 
@@ -417,13 +594,13 @@
         <div class="skill-category-card">
           <div class="skill-category-header">
             <div class="skill-category-icon"><i class="fa-solid fa-award"></i></div>
-            <h3>Certifications &amp; Speed</h3>
+            <h3>Certifications &amp; Speeds</h3>
           </div>
           <div class="skills-tags-wrap">
-            <span class="skill-pill cert-pill">65+ WPM Certified</span>
-            <span class="skill-pill cert-pill">Govt. CS Diploma</span>
-            <span class="skill-pill">Software Architecture</span>
-            <span class="skill-pill">Problem Solving</span>
+            <span class="skill-pill cert-pill"><i class="fa-solid fa-certificate"></i> 65+ WPM (Govt. Certified)</span>
+            <span class="skill-pill cert-pill"><i class="fa-solid fa-certificate"></i> Govt. CS Diploma</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> Software Architecture</span>
+            <span class="skill-pill"><i class="fa-solid fa-check"></i> Problem Solving</span>
           </div>
         </div>
       </div>
@@ -432,71 +609,96 @@
     <!-- Education Section -->
     <section id="education" class="container section-padding">
       <div class="reveal">
+        <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Background</span>
         <h2 class="section-title">Education &amp; Qualifications</h2>
-        <p class="section-subtitle">Academic degrees and certified vocational qualifications.</p>
+        <p class="section-subtitle">Formal education in software engineering alongside government-certified vocational diplomas.</p>
 
         <div class="education-grid">
+          <!-- Degree 1 -->
           <div class="card education-card">
-            <div class="education-header">
+            <div class="education-card-top">
               <span class="education-badge">Bachelor's Degree</span>
               <h3>Bachelor of Science in Software Engineering (BSSE)</h3>
-              <p class="education-inst">COMSATS University Islamabad — Sahiwal Campus</p>
+              <p class="education-inst"><i class="fa-solid fa-building-columns"></i> COMSATS University Islamabad — Sahiwal Campus</p>
             </div>
             <div class="education-time">
               <i class="fa-regular fa-calendar"></i> 2022 – 2026
             </div>
           </div>
 
+          <!-- Degree 2 -->
           <div class="card education-card">
-            <div class="education-header">
+            <div class="education-card-top">
               <span class="education-badge">Intermediate</span>
               <h3>Intermediate (FSc Pre-Engineering)</h3>
-              <p class="education-inst">Aspire Group of Colleges, Okara Campus</p>
+              <p class="education-inst"><i class="fa-solid fa-building-columns"></i> Aspire Group of Colleges, Okara Campus</p>
             </div>
             <div class="education-time">
               <i class="fa-regular fa-calendar"></i> 2020 – 2022
             </div>
           </div>
 
+          <!-- Degree 3 -->
           <div class="card education-card">
-            <div class="education-header">
+            <div class="education-card-top">
               <span class="education-badge">Secondary Education</span>
               <h3>Matriculation (Biology)</h3>
-              <p class="education-inst">Satluj Boys High School, Okara</p>
+              <p class="education-inst"><i class="fa-solid fa-school"></i> Satluj Boys High School, Okara</p>
             </div>
             <div class="education-time">
               <i class="fa-regular fa-calendar"></i> 2018 – 2020
             </div>
           </div>
 
-          <div class="card education-card">
-            <div class="education-header">
+          <!-- Certification -->
+          <div class="card education-card cert-card">
+            <div class="education-card-top">
               <span class="education-badge cert">Government-Certified</span>
               <h3>Diploma in Computer Science</h3>
-              <p class="education-inst">Muhammadia College of Computer Science, Okara</p>
+              <p class="education-inst"><i class="fa-solid fa-award"></i> Muhammadia College of Computer Science, Okara</p>
             </div>
-            <div class="education-time">
+            <div class="education-time cert-time">
               <i class="fa-regular fa-calendar"></i> 2019 – 2020
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- CV Download Callout Banner -->
-      <div class="cv-banner reveal">
-        <div class="cv-banner-content">
-          <h3>Download My Complete Curriculum Vitae</h3>
-          <p>
-            Get a comprehensive overview of my technical qualifications, project details, internship experience at Ready2Solutions, and certifications.
-          </p>
-        </div>
-        <div class="cv-banner-actions">
-          <a href="Ghulam_Fareed_CV_A4.pdf" target="_blank" class="btn btn-secondary">
-            <i class="fa-solid fa-eye"></i> View CV Online
-          </a>
-          <a href="Ghulam_Fareed_CV_A4.pdf" target="_blank" download="Ghulam_Fareed_CV.pdf" class="btn btn-primary cv-download-trigger">
-            <i class="fa-solid fa-file-arrow-down"></i> Download PDF
-          </a>
+    <!-- Dedicated CV / Resume Section -->
+    <section id="resume" class="container section-padding">
+      <div class="reveal">
+        <span class="section-tag"><i class="fa-solid fa-file-pdf"></i> Curriculum Vitae</span>
+        <h2 class="section-title">Verified Resume</h2>
+        <p class="section-subtitle">Review my complete background, project details, internship experience, and certified qualifications.</p>
+
+        <div class="resume-showcase-card card">
+          <div class="resume-card-left">
+            <div class="pdf-icon-wrapper">
+              <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <div class="resume-meta">
+              <span class="meta-tag">Official Document &bull; A4 PDF</span>
+              <h3>Ghulam Fareed — Software Developer CV</h3>
+              <p class="meta-desc">
+                Includes full work history at Ready2Solutions (BusinessMarket.pk), BSSE degree credentials at COMSATS, technical skills, and detailed project workflows.
+              </p>
+              <div class="meta-chips">
+                <span><i class="fa-solid fa-check"></i> ATS-Optimized</span>
+                <span><i class="fa-solid fa-check"></i> Direct Download</span>
+                <span><i class="fa-solid fa-check"></i> Updated 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-card-right">
+            <a href="Ghulam_Fareed_CV_A4.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+              <i class="fa-solid fa-eye"></i> <span>View in Browser</span>
+            </a>
+            <a href="Ghulam_Fareed_CV_A4.pdf" target="_blank" download="Ghulam_Fareed_CV.pdf" class="btn btn-primary btn-lg cv-download-trigger">
+              <i class="fa-solid fa-file-arrow-down"></i> <span>Download PDF</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -504,24 +706,85 @@
     <!-- Contact Section -->
     <section id="contact" class="container section-padding">
       <div class="reveal">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">Interested in collaborating or discussing opportunities? Feel free to reach out!</p>
-        <div class="contact-wrapper">
+        <span class="section-tag"><i class="fa-regular fa-paper-plane"></i> Get in Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Have a project, role opening, or collaboration in mind? Drop me a message or connect directly.</p>
+
+        <div class="contact-grid">
+          <!-- Contact Methods Cards -->
+          <div class="contact-methods">
+            <div class="card contact-method-card">
+              <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="method-details">
+                <span class="method-title">Direct Email</span>
+                <a href="mailto:fareediftikhar70@gmail.com" class="method-value">fareediftikhar70@gmail.com</a>
+              </div>
+              <button class="copy-btn copy-trigger" data-copy="fareediftikhar70@gmail.com" title="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="card contact-method-card">
+              <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="method-details">
+                <span class="method-title">Phone &bull; Primary</span>
+                <a href="tel:+923285593031" class="method-value">+92 328 5593031</a>
+              </div>
+              <button class="copy-btn copy-trigger" data-copy="+923285593031" title="Copy Phone">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="card contact-method-card">
+              <div class="method-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+              <div class="method-details">
+                <span class="method-title">Phone &bull; Secondary</span>
+                <a href="tel:+923171810082" class="method-value">+92 317 1810082</a>
+              </div>
+              <button class="copy-btn copy-trigger" data-copy="+923171810082" title="Copy Phone">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="card contact-method-card">
+              <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="method-details">
+                <span class="method-title">Location</span>
+                <span class="method-value">Satluj Cotton Mills, A-Line, Okara, Punjab, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
           <div class="card contact-form-card">
             <form id="contactForm" class="contact-form">
               <div class="form-group">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" placeholder="Enter your full name" required>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <input type="text" id="name" placeholder="John Doe" required>
+                </div>
               </div>
+
               <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="Enter your email address" required>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input type="email" id="email" placeholder="john@example.com" required>
+                </div>
               </div>
+
               <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                <label for="message">Your Message</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                  <textarea id="message" rows="5" placeholder="Hi Ghulam, I saw your portfolio and would love to discuss..." required></textarea>
+                </div>
               </div>
-              <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+              </button>
             </form>
           </div>
         </div>
@@ -532,7 +795,11 @@
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>&copy; <span id="year"></span> Ghulam Fareed. All rights reserved.</p>
+      <div class="footer-left">
+        <a href="#" class="footer-logo">&lt;GhulamFareed/&gt;</a>
+        <p>&copy; <span id="year"></span> Ghulam Fareed. Built with precision, modern CSS &amp; clean code.</p>
+      </div>
+
       <div class="footer-socials">
         <a href="https://github.com/fareediftikhar70-jpg" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         <a href="https://linkedin.com/in/ghulam-farid" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
@@ -541,6 +808,17 @@
       </div>
     </div>
   </footer>
+
+  <!-- Toast Notification for Copy-to-Clipboard -->
+  <div class="toast-notification" id="copyToast" role="alert" aria-live="polite">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMsg">Copied to clipboard!</span>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
   <script src="script.js"></script>
 </body>
