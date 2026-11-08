@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Scroll Reveal Animation
   const observerOptions = {
     threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    rootMargin: '0px 0px -40px 0px'
   };
 
   const revealObserver = new IntersectionObserver((entries) => {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Header Scroll Effect - adds shadow/glass background on scroll
   const header = document.querySelector('.site-header');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 40) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         const target = document.querySelector(href);
         if (target) {
-          const offset = 90;
+          const offset = 80;
           const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
           window.scrollTo({
             top: targetPosition,
@@ -64,28 +64,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
       const btn = contactForm.querySelector('button');
       const originalText = btn.innerHTML;
-      btn.innerHTML = 'Opening Mail... <i class="fa-solid fa-spinner fa-spin"></i>';
+      btn.innerHTML = 'Opening Mail Client... <i class="fa-solid fa-spinner fa-spin"></i>';
 
       setTimeout(() => {
         window.location.href = `mailto:fareediftikhar70@gmail.com?subject=${subject}&body=${body}`;
-        btn.innerHTML = 'Success! <i class="fa-solid fa-check"></i>';
+        btn.innerHTML = 'Mail Client Opened <i class="fa-solid fa-check"></i>';
         setTimeout(() => {
           btn.innerHTML = originalText;
         }, 3000);
-      }, 1000);
+      }, 700);
     });
   }
 
-  // Resume Download Logic
-  const downloadBtn = document.getElementById('downloadResume');
-  if (downloadBtn) {
-    downloadBtn.addEventListener('click', function() {
+  // Resume Download / Trigger Logic
+  document.querySelectorAll('.cv-download-trigger').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      // Allow default link behavior or ensure download
       const link = document.createElement('a');
-      link.href = 'Ghulam_Fareed_CV.docx';
-      link.download = 'Ghulam_Fareed_CV.docx';
+      link.href = 'Ghulam_Fareed_CV_A4.pdf';
+      link.download = 'Ghulam_Fareed_CV.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
     });
-  }
+  });
 });
